@@ -252,8 +252,18 @@ int main(int argc, char **argv)
             printf("unsupport w%da%d\n", w_bits, x_bits);
         }
         break;
+    case 16:
+        switch (w_bits) {
+        case 2:
+            test_mma_w2a16(x_bits, w_bits, d_x, d_w, d_x_pack, d_w_pack, m, n, k, d_out, h_out,
+                           h_ref_out, warmup, repeat, quant_sign, stream);
+            break;
+        default:
+            printf("xx unsupport w%da%d\n", w_bits, x_bits);
+        }
+        break;
     default:
-        printf("unsupport w%da%d\n", w_bits, x_bits);
+        printf("ss unsupport w%da%d\n", w_bits, x_bits);
     }
 
     free(h_x);

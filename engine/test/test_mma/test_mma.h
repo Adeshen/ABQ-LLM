@@ -195,3 +195,6 @@ void test_mma_w7a7(int x_bits, int w_bits, int *d_x, int *d_w, int *d_x_pack, in
 void test_mma_w8a8(int x_bits, int w_bits, int *d_x, int *d_w, int *d_x_pack, int *d_w_pack, int m,
                     int n, int k, int *d_out, int *h_out, int *h_ref_out, int warmup, int repeat,
                     bool quant_sign, cudaStream_t stream);
+void test_mma_w2a16(int x_bits, int w_bits, int *d_x, int *d_w, int *d_x_pack, int *d_w_pack, int m,
+                    int n, int k, int *d_out, int *h_out, int *h_ref_out, int warmup, int repeat,
+                    bool quant_sign, cudaStream_t stream);

@@ -20,6 +20,7 @@
 #include "aq_bmma_impl/aq_bmma_w2a4.h"
 #include "aq_bmma_impl/aq_bmma_w2a6.h"
 #include "aq_bmma_impl/aq_bmma_w2a8.h"
+#include "aq_bmma_impl/aq_bmma_w2a16.h"
 
 #include "aq_bmma_impl/aq_bmma_w3a3.h"
 #include "aq_bmma_impl/aq_bmma_w3a8.h"
